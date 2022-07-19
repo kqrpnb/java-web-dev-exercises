@@ -4,30 +4,35 @@ import java.util.Scanner;
 public class Area {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Double rad = 0.0;
-        int i = 0;
+        double rad = 0.0;
 
-        System.out.println("Enter the radius of your circle: ");
-//        if (input.next(String, ".+")) {
-//                i = 1;
-//                System.out.println("Not a number. Try again.");
-//        }
-        while (i <= 0) {
-            System.out.println("Enter the radius of your circle: ");
-//            rad = input.nextDouble();
+        while (rad <= 0.0) {
+            System.out.println("Enter the radius of your circle (positive value): ");
             if (input.hasNextDouble()) {
                 rad = input.nextDouble();
-                i = 1;
-                if (rad <= 0.0) {
-                    i = 0;
-                    System.out.println("Try again.");
-                }
             } else {
-                    i = 1;
+                System.out.println("Provide a numeric value.");
+                input.next();
+            }
+        }
+
+ /*       do {
+            System.out.println("Enter the radius of your circle: ");
+            if (!input.hasNextDouble()) {
+                System.out.println("Please enter numeric value!");
+            }
+
+            if (input.hasNextDouble()) {
+                if (input.nextDouble() >= 0.0) {
                     rad = input.nextDouble();
                 }
-        }
+            }
+            System.out.println("Try again.");
+        } while (rad <= 0.0);
+
+//            input.next();
 //        Double area = PI * rad * rad;
+  */ // garbage!
         Double area = GetArea.getArea(rad);
         System.out.println("The area of a circle of radius " + rad + " is: " + area + ".");
         input.close();
