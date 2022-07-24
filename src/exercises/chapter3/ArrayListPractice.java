@@ -46,6 +46,8 @@ public class ArrayListPractice {
         wordList.add("watch");
 
         String str = "I would not, could not, in a box. I would not, could not with a fox. I will not eat them in a house. I will not eat them with a mouse.";
+
+//        ArrayListPractice_Method.stringToArray(str, " ");
         ArrayList<String> altWordList = ArrayListPractice_Method.stringToArray(str, " ");
 //        System.out.println("wordlist" + altWordList);
         ArrayListPractice_Method.sumEvenNumbers(integers);
