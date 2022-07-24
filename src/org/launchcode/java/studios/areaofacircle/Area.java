@@ -33,7 +33,7 @@ public class Area {
 //            input.next();
 //        Double area = PI * rad * rad;
   */ // garbage!
-        Double area = GetArea.getArea(rad);
+        Double area = Circle.getArea(rad);
         System.out.println("The area of a circle of radius " + rad + " is: " + area + ".");
         input.close();
     }
