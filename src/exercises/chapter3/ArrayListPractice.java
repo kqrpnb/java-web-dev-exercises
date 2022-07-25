@@ -52,5 +52,6 @@ public class ArrayListPractice {
 //        System.out.println("wordlist" + altWordList);
         ArrayListPractice_Method.sumEvenNumbers(integers);
         ArrayListPractice_Method.findWordsOfLength(altWordList, length);
+        input.close();
     }
 }

@@ -32,7 +32,10 @@ public class ArrayListPractice_Method {
             System.out.println("Find more words? (Enter integer to continue, other key to quit) ");
             if (input.hasNextInt()) {
                 length = input.nextInt();
-            } else break;
+            } else {
+                input.close();
+                break;
+            }
         }
     }
 
