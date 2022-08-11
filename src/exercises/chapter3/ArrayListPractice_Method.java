@@ -3,6 +3,7 @@ package exercises.chapter3;
 import java.util.*;
 
 public class ArrayListPractice_Method {
+
     public static void sumEvenNumbers (ArrayList<Integer> list) {
         int total = 0;
         for (int i : list) if (i % 2 == 0) total += i;
